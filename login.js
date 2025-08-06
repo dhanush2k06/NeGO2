@@ -7,8 +7,9 @@ document.getElementById("loginBtn").addEventListener("click", async () => {
 
   try {
     await signInWithEmailAndPassword(auth, email, password);
-    window.location.href = "NeGO.html"; // Redirect after login
+    window.location.href = "index.html"; // Redirect after login
   } catch (error) {
     alert("Login failed: " + error.message);
   }
 });
+
