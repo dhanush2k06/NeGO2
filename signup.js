@@ -7,8 +7,9 @@ document.getElementById("signupBtn").addEventListener("click", async () => {
 
   try {
     await createUserWithEmailAndPassword(auth, email, password);
-    window.location.href = "NeGO.html"; // Redirect after signup
+    window.location.href = "index.html"; // Redirect after signup
   } catch (error) {
     alert("Signup failed: " + error.message);
   }
 });
+
